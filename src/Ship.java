@@ -10,10 +10,6 @@ public class Ship implements Observable {
 	}
 	
 	
-	// TODO
-	// See unit tests for what needs to be done here
-	// in the observer pattern
-	//
 	public void update() throws Exception {
 		hit();
 	}
@@ -29,9 +25,6 @@ public class Ship implements Observable {
 	}
 	
 	
-	// TODO
-	// a peice of logic is missing here
-	//
 	public void hit() throws Exception {
 		if (!this.sunk) {
 			this.life -= 1;

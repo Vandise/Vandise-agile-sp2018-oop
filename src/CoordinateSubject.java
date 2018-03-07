@@ -10,6 +10,8 @@ public abstract class CoordinateSubject {
 	//
 	public void notifyObserver() throws Exception {
 
+		attach(observer);
+
 	}
 
 	public Ship getObservable() {
@@ -19,4 +21,5 @@ public abstract class CoordinateSubject {
 	public void attach(Ship observer) {
 		this.observer = observer;
 	}
+
 }

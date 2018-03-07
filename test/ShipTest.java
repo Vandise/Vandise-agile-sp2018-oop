@@ -35,6 +35,8 @@ public class ShipTest {
 			this.ship.hit();
 		}
 		assertThat(this.ship.isSunk(), is(true));
+		
+		//I tried making the else if stament say that this.sunk = true and saw if I could use this.life = 0.
 	}
 
 	@Test

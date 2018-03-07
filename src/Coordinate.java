@@ -16,7 +16,13 @@ public class Coordinate extends CoordinateSubject {
 		if (!this.called) {
 			this.notifyObserver();
 			return "Miss";
-		} else {
+		} else if (!this.hasShip) {
+			
+			this.notifyObserver();
+			return "Miss";
+			
+		}
+		else {
 			throw new Exception("Coordinate already called");
 		}
 	}

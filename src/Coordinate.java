@@ -37,7 +37,8 @@ public class Coordinate extends CoordinateSubject {
 	//
 	@Override
 	public void attach(Ship observer) {
-		
+		super.attach(observer);
+		this.hasShip = true;
 	}
 
 	// TODO
@@ -51,7 +52,7 @@ public class Coordinate extends CoordinateSubject {
 	  }
 	}
 
-	// TODO
+	// TODO 
 	// is there a ship on this coordinate?
 	//
 	public boolean hasShip() {

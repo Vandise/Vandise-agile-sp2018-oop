@@ -18,7 +18,7 @@ public class Board {
 		return this.size;
 	}
 
-	public String callCoordinate(int x, int y) throws Exception {
+	public String callCoordinate(int x, int y) throws java.lang.Exception {
 		int coordinates = y * this.size + x;
 		return (this.coordinateVector[coordinates]).call();
 	}
@@ -27,6 +27,8 @@ public class Board {
 		// TODO: implement add ship functionality. See vectors
 		
 		this.shipCount += 1;
+		
+		
 		
 	}
 

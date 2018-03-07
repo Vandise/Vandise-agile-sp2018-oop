@@ -11,14 +11,19 @@ public class ShipFactory {
 			ship = new Ship(4);
 			break;
 		
-		//Creats a Patrol Ship
+		//Creates a Patrol Ship
 		case PATROL: 
 			ship = new Ship(2);
 			break;
 		
-		//Creats a Sub Ship
+		//Creates a Sub Ship
 		case SUBMARINE:
 			ship = new Ship(3);
+			break;
+			
+		//Creates a a Carrier Ship
+		case CARRIER:
+			ship = new Ship(5);
 			break;
 			
 		

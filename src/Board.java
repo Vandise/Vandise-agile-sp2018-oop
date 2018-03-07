@@ -25,6 +25,13 @@ public class Board {
 
 	public void addShip(int x, int y, ShipType type) throws Exception {
 		// TODO: implement add ship functionality. See vectors
+		
+		int cord = y * this.size + x;
+		
+		(this.coordinateVector[cord]).hasShip();
+		
+		shipCount += 1;
+		
 	}
 
 	public int getShipCount() {

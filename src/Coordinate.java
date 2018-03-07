@@ -15,6 +15,11 @@ public class Coordinate extends CoordinateSubject {
 	public String call() throws Exception {
 		if (!this.called) {
 			this.called = true;
+			
+			if (this.hasShip) {
+				super.getObservable().hit();
+			}
+			
 			this.notifyObserver();
 			return "Miss";
 		} else {
@@ -28,7 +33,8 @@ public class Coordinate extends CoordinateSubject {
 	//
 	@Override
 	public void attach(Ship observer) {
-		// TODO
+		hasShip = true;
+		super.attach(observer);
 	}
 
 	// TODO
@@ -38,10 +44,7 @@ public class Coordinate extends CoordinateSubject {
 		return false;
 	}
 
-	// TODO
-	// is there a ship on this coordinate?
-	//
 	public boolean hasShip() {
-		return false;
+		return hasShip;
 	}
 }

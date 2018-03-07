@@ -25,6 +25,30 @@ public class Board {
 
 	public void addShip(int x, int y, ShipType type) throws Exception {
 		// TODO: implement add ship functionality. See vectors
+		if(ShipType.BATTLESHIP == type) {
+			this.size = 4;
+			this.shipCount ++;
+		}
+		else if(ShipType.CARRIER == type) {
+			this.size = 5;
+			this.shipCount ++;
+		}
+		else if(ShipType.DESTROYER == type) {
+			this.size = 3;
+			this.shipCount ++;
+		}
+		else if(ShipType.SUBMARINE == type) {
+			this.size = 3;
+			this.shipCount ++;
+		}
+		else if(ShipType.PATROL == type) {
+			this.size = 2;
+			this.shipCount ++;
+		}
+		
+		
+	
+		
 	}
 
 	public int getShipCount() {

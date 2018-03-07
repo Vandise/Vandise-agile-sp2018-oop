@@ -9,7 +9,6 @@ public class ShipElement {
 	
 
 	public void update() {
-		// TODO Auto-generated method stub
 		System.out.println("I've pudated: " + this.shipType);
 		
 	}

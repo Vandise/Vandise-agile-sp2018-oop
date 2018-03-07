@@ -13,6 +13,11 @@ public class Coordinate extends CoordinateSubject {
 	// read about the observer pattern
 	//
 	public String call() throws Exception {
+		// I've tried using the observer pattern that we used 
+		// in class, but I didnt understand the implementation
+		// here with what we did in class.  There was no
+		// observable behavior in what was shown in class
+		// just copying code without explanation.  
 		if (!this.called) {
 			this.notifyObserver();
 			return "Miss";

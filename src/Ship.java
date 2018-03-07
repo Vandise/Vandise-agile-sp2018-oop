@@ -12,7 +12,7 @@ public class Ship implements Observable {
 	// in the observer pattern
 	//
 	public void update() throws Exception {
-
+	  hit();
 	}
 
 	public boolean isSunk() {
@@ -27,8 +27,15 @@ public class Ship implements Observable {
 	//	a peice of logic is missing here
 	//
 	public void hit() throws Exception {
+	  
 		if (!this.sunk) {
-			this.life -= 1;
+		  
+		  this.life --;
+		  
+		  if (this.life == 0) {
+		    this.sunk = true;
+		  }
+		  
 		} else {
 			throw new Exception("Hit on ship that's already sunk.");
 		}

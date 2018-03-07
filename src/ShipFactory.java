@@ -16,6 +16,9 @@ public class ShipFactory {
 		case DESTROYER:
 			ship = new Ship(3);
 			break;
+		case CARRIER:
+			ship = new Ship(5);
+			break;
 		case BATTLESHIP:
 			ship = new Ship(4);
 			break;

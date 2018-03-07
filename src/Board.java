@@ -25,6 +25,15 @@ public class Board {
 
 	public void addShip(int x, int y, ShipType type) throws Exception {
 		// TODO: implement add ship functionality. See vectors
+		x = 7;
+	    y = 7;
+	    
+	    type = ShipType.BATTLESHIP;
+	    
+	    /*I couldnt figure out the coordinates and tried to create variables. I tried to use an if else
+	     * statement where if the coordinate x and y are 7 then add ship.*/
+		
+		
 	}
 
 	public int getShipCount() {

@@ -1,5 +1,3 @@
-import java.io.Console;
-import java.util.Vector;
 
 public class Board {
 
@@ -29,6 +27,10 @@ public class Board {
 		// TODO: implement add ship functionality. See vectors
 		shipCount += 1;
 		Ship ship = ShipFactory.create(type);
+		int coordinates = y * this.size + x;
+		Coordinate Coord = new Coordinate();
+		Coord.attach(ship);
+		coordinateVector[coordinates] = Coord;
 	}
 
 	public int getShipCount() {

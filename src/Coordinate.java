@@ -16,7 +16,9 @@ public class Coordinate extends CoordinateSubject {
 		if (!this.called) {
 			this.called = true;
 			if (this.hasShip()){
+				this.notifyObserver();
 				return "Hit";
+				
 			} else {
 				return "Miss";				
 			}
@@ -41,6 +43,7 @@ public class Coordinate extends CoordinateSubject {
 	public boolean called() {
 		if (this.called = false){
 			return false;
+			
 		} else {
 			return true;
 		}

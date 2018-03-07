@@ -10,7 +10,7 @@ public abstract class CoordinateSubject {
 	//
 	public void notifyObserver() throws Exception {
 
-		
+		observer.update();
 	}
 
 	public Ship getObservable() {

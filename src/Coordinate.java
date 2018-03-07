@@ -29,6 +29,7 @@ public class Coordinate extends CoordinateSubject {
 	public void attach(Ship observer) {
 		// TODO
 		
+				
 	}
 
 	// TODO

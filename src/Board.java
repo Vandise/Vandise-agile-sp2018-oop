@@ -27,7 +27,12 @@ public class Board {
 		// TODO: implement add ship functionality. See vectors
 		Ship newShip = ShipFactory.create(type);
 		
+		for (int i = 0; i < newShip.getLife(); i++){
+			coordinateVector[x + (y * this.getSize())].attach(newShip);
+		}
+		
 		this.shipCount += 1;
+		
 	}
 
 	public int getShipCount() {

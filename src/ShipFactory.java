@@ -13,6 +13,9 @@ public class ShipFactory {
 		case SUBMARINE:
 			ship = new Ship(3);
 			break;
+		case DESTROYER:
+			ship = new Ship(3);
+			break;
 		case BATTLESHIP:
 			ship = new Ship(4);
 			break;

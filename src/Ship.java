@@ -23,8 +23,7 @@ public class Ship implements Observable {
 		if (this.sunk) {
 			throw new Exception("Hit on ship that's already sunk.");
 		} else {
-			this.life -= 1;
-			this.sunk = this.life == 0 ? true : false;
+			this.sunk = --this.life == 0 ? true : false;
 		}
 	}
 }

@@ -23,7 +23,11 @@ public class Board {
 	}
 
 	public void addShip(int x, int y, ShipType type) throws Exception {
-		getCoordinate(x, y).attach(ShipFactory.create(type));
+		Ship ship = ShipFactory.create(type);
+		int life = ship.getLife();
+		for (int i = 0; i < life; i++) {
+			getCoordinate(x, y - i).attach(ship);
+		}
 		shipCount++;
 	}
 

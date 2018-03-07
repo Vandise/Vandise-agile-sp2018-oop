@@ -13,13 +13,12 @@ public class Coordinate extends CoordinateSubject {
 	// read about the observer pattern
 	//
 	public String call() throws Exception {
-		// I've tried using the observer pattern that we used 
-		// in class, but I didnt understand the implementation
-		// here with what we did in class.  There was no
-		// observable behavior in what was shown in class
-		// just copying code without explanation.  
 		if (!this.called) {
 			this.notifyObserver();
+			this.called = true;
+			if (this.hasShip) {
+				this.observer.hit();
+			}
 			return "Miss";
 		} else {
 			throw new Exception("Coordinate already called");
@@ -33,6 +32,8 @@ public class Coordinate extends CoordinateSubject {
 	@Override
 	public void attach(Ship observer) {
 		// TODO
+		this.hasShip = true;
+		this.observer = observer;
 	}
 
 	// TODO

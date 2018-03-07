@@ -12,7 +12,7 @@ public class Ship implements Observable {
 	// in the observer pattern
 	//
 	public void update() throws Exception {
-
+	  this.hit();
 	}
 
 	public boolean isSunk() {

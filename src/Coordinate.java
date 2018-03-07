@@ -14,6 +14,7 @@ public class Coordinate extends CoordinateSubject {
 	//
 	public String call() throws Exception {
 		if (!this.called) {
+			this.called = true;
 			if (this.hasShip()){
 				return "Hit";
 			} else {
@@ -50,6 +51,6 @@ public class Coordinate extends CoordinateSubject {
 	// is there a ship on this coordinate?
 	//
 	public boolean hasShip() {
-		return false;
+		return hasShip;
 	}
 }

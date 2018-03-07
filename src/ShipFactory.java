@@ -14,6 +14,10 @@ public class ShipFactory {
 		case PATROL:
 			ship = new Ship(2);
 			break;
+			
+		case DESTROYER:
+			ship = new Ship(3);
+			break;
 		default:
 			throw new Exception("Undefined ShipType: " + type);
 		}

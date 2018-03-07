@@ -31,6 +31,12 @@ public class Board {
 		Coordinate Coord = new Coordinate();
 		Coord.attach(ship);
 		coordinateVector[coordinates] = Coord;
+		for (int i = 0; i < ship.getLife();i++) {
+			int extCoord = (y - i) * this.size + x;
+			Coordinate nxtCoord = new Coordinate();
+			nxtCoord.attach(ship);
+			coordinateVector[extCoord] = nxtCoord;
+		}
 	}
 
 	public int getShipCount() {

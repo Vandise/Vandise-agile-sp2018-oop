@@ -17,7 +17,12 @@ public class Coordinate extends CoordinateSubject {
 			this.called = true;
 			if (hasShip) {
 				this.notifyObserver();
-				return "Hit";
+				Ship ship = this.getObservable();
+				if(ship.isSunk()) {
+					return "Sunk";
+				}else {
+					return "Hit";
+				}
 			}else {
 				return "Miss";
 			}

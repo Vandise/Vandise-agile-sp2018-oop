@@ -14,6 +14,7 @@ public class Coordinate extends CoordinateSubject {
 	//
 	public String call() throws Exception {
 		if (!this.called) {
+			this.called = true;
 			this.notifyObserver();
 			return "Miss";
 		} else {

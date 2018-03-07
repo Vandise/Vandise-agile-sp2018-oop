@@ -8,53 +8,56 @@ public class Coordinate extends CoordinateSubject {
 		this.hasShip = false;
 	}
 
-	// TODO
-	// call the coordinate, check if the ship was hit, missed, or sunk
-	// read about the observer pattern
-	//
 	public String call() throws Exception {
+		
 		if (!this.called) {
+			
 			this.notifyObserver();
 			this.called = true;
+			
 			if (this.hasShip) {
 				this.observer.hit();
 			}
+			
 			return "Miss";
+			
 		} else {
+			
 			throw new Exception("Coordinate already called");
+			
 		}
 	}
 
-	// TODO
-	//	read about inheritance and calling parent
-	//	methods in Java
-	//
 	@Override
 	public void attach(Ship observer) {
-		// TODO
+		
 		this.hasShip = true;
 		this.observer = observer;
+		
 	}
 
-	// TODO
-	// return if the coordinate has been called or not
-	//
 	public boolean called() {
 		if (this.called) {
+			
 			return true;
+			
 		} else {
+			
 			return false;
+			
 		}
 	}
 
-	// TODO
-	// is there a ship on this coordinate?
-	//
 	public boolean hasShip() {
+		
 		if (this.hasShip) {
+			
 			return true;
+			
 		} else {
+			
 			return false;
+			
 		}
 	}
 }

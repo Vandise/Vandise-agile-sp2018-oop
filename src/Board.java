@@ -1,6 +1,6 @@
 
 public class Board {
-
+	//this is the test
 	private int size;
 	private int shipCount;
 	Coordinate[] coordinateVector;

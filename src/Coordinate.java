@@ -13,7 +13,7 @@ public class Coordinate extends CoordinateSubject {
 	// read about the observer pattern
 	//
 	public String call() throws Exception {
-		if (!this.called) {
+		if (this.called) {
 			this.notifyObserver();
 			return "Miss";
 		} else {

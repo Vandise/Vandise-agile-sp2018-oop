@@ -11,7 +11,8 @@ public class ShipFactory {
 			ship = new Ship(4);
 			break;
 		
-		case PATROL:
+		//Creats a Patrol Ship
+		case PATROL: 
 			ship = new Ship(2);
 			break;
 			

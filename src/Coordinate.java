@@ -32,7 +32,7 @@ public class Coordinate extends CoordinateSubject {
 	//
 	@Override
 	public void attach(Ship observer) {
-		// TODO
+		this.observer = observer;
 	}
 
 	// TODO
@@ -52,6 +52,5 @@ public class Coordinate extends CoordinateSubject {
 	public void setShip() {
 		this.hasShip = true;
 	}
-	
 	
 }

@@ -9,6 +9,7 @@ public class Board {
 		this.size = size;
 		this.shipCount = 0;
 		this.coordinateVector = new Coordinate[size*size];
+
 		for (int i = 0; i < this.coordinateVector.length; i++) {
 			this.coordinateVector[i] = new Coordinate();
 		}
@@ -25,6 +26,7 @@ public class Board {
 	public void addShip(int x, int y, ShipType type) throws Exception {
 		Ship ship = ShipFactory.create(type);
 		int life = ship.getLife();
+
 		for (int i = 0; i < life; i++) {
 			getCoordinate(x, y - i).attach(ship);
 		}

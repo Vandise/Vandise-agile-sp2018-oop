@@ -1,4 +1,6 @@
+
 public class Ship implements Observable {
+
 	private int life;
 	private boolean sunk;
 

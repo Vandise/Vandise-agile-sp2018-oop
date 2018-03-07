@@ -1,7 +1,6 @@
-/*
- * Observer pattern
- */
+
 public abstract class CoordinateSubject {
+
 	protected Ship observer;
 
 	public void notifyObserver() throws Exception {

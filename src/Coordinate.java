@@ -1,5 +1,6 @@
 
 public class Coordinate extends CoordinateSubject {
+
 	private boolean called;
 	private boolean hasShip;
 
@@ -13,12 +14,12 @@ public class Coordinate extends CoordinateSubject {
 			throw new Exception("Coordinate already called");
 		}
 		this.called = true;
+
 		if (this.hasShip) {
 			this.notifyObserver();
 			return this.getObservable().isSunk() ? "Sunk" : "Hit";
-		}  else {
-			return "Miss";
 		}
+		return "Miss";
 	}
 
 	@Override

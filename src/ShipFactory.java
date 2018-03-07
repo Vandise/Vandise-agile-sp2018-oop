@@ -1,5 +1,6 @@
 
 public class ShipFactory {
+
 	public static Ship create(ShipType type) throws Exception {
 		Ship ship = null;
 		switch(type) {

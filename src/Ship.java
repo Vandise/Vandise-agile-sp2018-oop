@@ -15,7 +15,7 @@ public class Ship implements Observable {
 		if (!this.sunk) {
 			this.life -= 1;
 		} else {
-			throw new Exception("Hit on ship that's already sunk.");
+			throw new Exception("No more life to deducts.");
 		}
 
 	}
@@ -40,8 +40,15 @@ public class Ship implements Observable {
 		if ((!this.sunk)) {
 			this.life -= 1;
 		} else {
+			
 			this.sunk = true;
 			throw new Exception("Hit on ship that's already sunk.");
+				
+			
 		}
+		if (this.life == -1){
+			throw new Exception("Cannot hit ship any longer");
+		}
+
 	}
 }

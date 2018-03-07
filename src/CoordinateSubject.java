@@ -9,7 +9,11 @@ public abstract class CoordinateSubject {
 	// read about the observer pattern
 	//
 	public void notifyObserver() throws Exception {
-
+		// I'm not sure what's it wants me to do here.
+		// My gut says to call observer.update(); But it doesn't seem to have the
+		// desired effect. Everything seems to be working besides this method
+		// (And the pointers stuff with the Board tests).
+		// observer.update();
 	}
 
 	public Ship getObservable() {

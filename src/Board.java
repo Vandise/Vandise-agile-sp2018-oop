@@ -1,3 +1,5 @@
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
 
 public class Board {
 
@@ -24,7 +26,9 @@ public class Board {
 	}
 
 	public void addShip(int x, int y, ShipType type) throws Exception {
-		// TODO: implement add ship functionality. See vectors
+		Ship ship = ShipFactory.create(type);
+		this.shipCount++;
+		this.callCoordinate(x, y);
 	}
 
 	public int getShipCount() {

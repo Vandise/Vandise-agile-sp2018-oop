@@ -24,7 +24,10 @@ public class Board {
 	}
 
 	public void addShip(int x, int y, ShipType type) throws Exception {
-		// TODO: implement add ship functionality. See vectors
+		// Need to add 1 to coordinate 7,7 to pass test - takes in ship type which has a value
+		// associated with it of how many "spots" to fill. Coordinate needs to +1 when ship is on it.
+		//coordinateVector.add()
+		
 	}
 
 	public int getShipCount() {

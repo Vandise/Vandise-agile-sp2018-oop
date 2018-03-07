@@ -1,9 +1,6 @@
 
 public class ShipFactory {
-	// TODO:
-	// Create a ship based on the ShipType
-	// read about the factory pattern
-	//
+
 	public static Ship create(ShipType type) throws Exception {
 		
 		Ship ship = null;
@@ -24,6 +21,10 @@ public class ShipFactory {
 			
 		case SUBMARINE:
 			ship = new Ship(3);
+			break;
+			
+		case PATROL:
+			ship = new Ship(2);
 			break;
 			
 		default:

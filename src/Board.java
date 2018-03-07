@@ -24,6 +24,11 @@ public class Board {
 	}
 
 	public void addShip(int x, int y, ShipType type) throws Exception {
+		//No idea how to do this
+		this.coordinateVector[0] = coordinateVector[x];
+		this.coordinateVector[5] = coordinateVector[y];;
+		
+		shipCount += 1;
 		
 	}
 

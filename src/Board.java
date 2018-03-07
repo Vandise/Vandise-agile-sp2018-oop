@@ -1,3 +1,5 @@
+import java.io.Console;
+import java.util.Vector;
 
 public class Board {
 
@@ -25,6 +27,8 @@ public class Board {
 
 	public void addShip(int x, int y, ShipType type) throws Exception {
 		// TODO: implement add ship functionality. See vectors
+		shipCount += 1;
+		Ship ship = ShipFactory.create(type);
 	}
 
 	public int getShipCount() {

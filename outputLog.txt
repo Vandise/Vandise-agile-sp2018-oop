@@ -1,0 +1,564 @@
+PS C:\Users\dpope\OneDrive - IDEXX\dpope\desktop\newagile> git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+PS C:\Users\dpope\OneDrive - IDEXX\dpope\desktop\newagile> ..\gitCommitter.ps1
+
+EXECUTING GITCOMMITTER...
+
+PATH WITH UPDATES  = C:\users\dpope\OneDrive - IDEXX\dpope\Desktop\oldAgile
+PATH BEING UPDATED = C:\users\dpope\OneDrive - IDEXX\dpope\Desktop\newAgile
+BASE BRANCH              = 'master'
+FEATURE BRANCH SIGNIFIER = 'feature-'
+SKIP MERGE BRANCHES      = True
+
+CD: PATH WITH UPDATES
+CHECKOUT: master
+
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 11 commits.
+  (use "git push" to publish your local commits)
+
+COMMIT LIST:
+314a77a feature-patrolships fix failing canCreate test
+ab1b25c feature-subships fix failing canCreate test
+1e6dc4c feature-destroyerships fix failing canCreate test
+5b6a1da feature-carrierships fix failing canCreate test
+411d040 feature-shiplogic fix canBeSunk test
+5281141 shiplogic fix updateCallsHit test
+c26d186 feature-coordinate fix canBeHit test (and missesWhenNoShip in the process)
+064a299 coordinate fix callingCoordinateSetsCalled test
+3f2a897 feature-board 'fix' canAddShips test.
+81c8355 board fix canSinkShips test (fixing canAddShips, part of CoordinateSubject, cleaned up ship constructor.) all tests pass.
+14473fb feature-formatting changed whitespace/formatting to be consistent across the project. minor code change, all tests pass.
+
+CD: PATH BEING UPDATED
+CHECKOUT: master
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+
+CHECKOUT: feature-patrolships
+Switched to a new branch 'feature-patrolships'
+
+CD: PATH WITH UPDATES
+CHECKOUT: 314a77a
+
+Note: checking out '314a77a'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 314a77a... feature-patrolships fix failing canCreate test
+
+ATTEMPTING RM...
+COMPLETE
+
+ATTEMPTING COPY...
+COMPLETE
+
+CD: PATH BEING UPDATED
+
+ADDING FILES...
+COMPLETE
+
+COMMITTING... feature-patrolships fix failing canCreate test
+[feature-patrolships 700e98f] feature-patrolships fix failing canCreate test
+ 2 files changed, 4 insertions(+)
+COMPLETE
+
+CHECKOUT: master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+MERGING BRANCH 'feature-patrolships'...
+Updating ad689c7..700e98f
+Fast-forward
+ bin/ShipFactory.class | Bin 1288 -> 1321 bytes
+ src/ShipFactory.java  |   4 ++++
+ 2 files changed, 4 insertions(+)
+COMPLETE
+
+DELETING BRANCH 'feature-patrolships'...
+Deleted branch feature-patrolships (was 700e98f).
+COMPLETE
+
+CHECKOUT: feature-subships
+Switched to a new branch 'feature-subships'
+
+CD: PATH WITH UPDATES
+CHECKOUT: ab1b25c
+
+Previous HEAD position was 314a77a... feature-patrolships fix failing canCreate test
+HEAD is now at ab1b25c... feature-subships fix failing canCreate test
+
+ATTEMPTING RM...
+COMPLETE
+
+ATTEMPTING COPY...
+COMPLETE
+
+CD: PATH BEING UPDATED
+
+ADDING FILES...
+COMPLETE
+
+COMMITTING... feature-subships fix failing canCreate test
+[feature-subships bcb0024] feature-subships fix failing canCreate test
+ 2 files changed, 3 insertions(+)
+COMPLETE
+
+CHECKOUT: master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+MERGING BRANCH 'feature-subships'...
+Updating 700e98f..bcb0024
+Fast-forward
+ bin/ShipFactory.class | Bin 1321 -> 1342 bytes
+ src/ShipFactory.java  |   3 +++
+ 2 files changed, 3 insertions(+)
+COMPLETE
+
+DELETING BRANCH 'feature-subships'...
+Deleted branch feature-subships (was bcb0024).
+COMPLETE
+
+CHECKOUT: feature-destroyerships
+Switched to a new branch 'feature-destroyerships'
+
+CD: PATH WITH UPDATES
+CHECKOUT: 1e6dc4c
+
+Previous HEAD position was ab1b25c... feature-subships fix failing canCreate test
+HEAD is now at 1e6dc4c... feature-destroyerships fix failing canCreate test
+
+ATTEMPTING RM...
+COMPLETE
+
+ATTEMPTING COPY...
+COMPLETE
+
+CD: PATH BEING UPDATED
+
+ADDING FILES...
+COMPLETE
+
+COMMITTING... feature-destroyerships fix failing canCreate test
+[feature-destroyerships 8ac1bba] feature-destroyerships fix failing canCreate test
+ 2 files changed, 3 insertions(+)
+COMPLETE
+
+CHECKOUT: master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+MERGING BRANCH 'feature-destroyerships'...
+Updating bcb0024..8ac1bba
+Fast-forward
+ bin/ShipFactory.class | Bin 1342 -> 1363 bytes
+ src/ShipFactory.java  |   3 +++
+ 2 files changed, 3 insertions(+)
+COMPLETE
+
+DELETING BRANCH 'feature-destroyerships'...
+Deleted branch feature-destroyerships (was 8ac1bba).
+COMPLETE
+
+CHECKOUT: feature-carrierships
+Switched to a new branch 'feature-carrierships'
+
+CD: PATH WITH UPDATES
+CHECKOUT: 5b6a1da
+
+Previous HEAD position was 1e6dc4c... feature-destroyerships fix failing canCreate test
+HEAD is now at 5b6a1da... feature-carrierships fix failing canCreate test
+
+ATTEMPTING RM...
+COMPLETE
+
+ATTEMPTING COPY...
+COMPLETE
+
+CD: PATH BEING UPDATED
+
+ADDING FILES...
+COMPLETE
+
+COMMITTING... feature-carrierships fix failing canCreate test
+[feature-carrierships 080beaf] feature-carrierships fix failing canCreate test
+ 2 files changed, 3 insertions(+)
+COMPLETE
+
+CHECKOUT: master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+MERGING BRANCH 'feature-carrierships'...
+Updating 8ac1bba..080beaf
+Fast-forward
+ bin/ShipFactory.class | Bin 1363 -> 1388 bytes
+ src/ShipFactory.java  |   3 +++
+ 2 files changed, 3 insertions(+)
+COMPLETE
+
+DELETING BRANCH 'feature-carrierships'...
+Deleted branch feature-carrierships (was 080beaf).
+COMPLETE
+
+CHECKOUT: feature-shiplogic
+Switched to a new branch 'feature-shiplogic'
+
+CD: PATH WITH UPDATES
+CHECKOUT: 411d040
+
+Previous HEAD position was 5b6a1da... feature-carrierships fix failing canCreate test
+HEAD is now at 411d040... feature-shiplogic fix canBeSunk test
+
+ATTEMPTING RM...
+COMPLETE
+
+ATTEMPTING COPY...
+COMPLETE
+
+CD: PATH BEING UPDATED
+
+ADDING FILES...
+COMPLETE
+
+COMMITTING... feature-shiplogic fix canBeSunk test
+[feature-shiplogic f23ecf8] feature-shiplogic fix canBeSunk test
+ 2 files changed, 4 insertions(+), 6 deletions(-)
+COMPLETE
+
+CONTINUING BRANCH: feature-shiplogic
+
+CD: PATH WITH UPDATES
+CHECKOUT: 5281141
+
+Previous HEAD position was 411d040... feature-shiplogic fix canBeSunk test
+HEAD is now at 5281141... shiplogic fix updateCallsHit test
+
+ATTEMPTING RM...
+COMPLETE
+
+ATTEMPTING COPY...
+COMPLETE
+
+CD: PATH BEING UPDATED
+
+ADDING FILES...
+COMPLETE
+
+COMMITTING... shiplogic fix updateCallsHit test
+[feature-shiplogic 39ce469] shiplogic fix updateCallsHit test
+ 2 files changed, 1 insertion(+), 5 deletions(-)
+ rewrite bin/Ship.class (68%)
+COMPLETE
+
+CHECKOUT: master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+MERGING BRANCH 'feature-shiplogic'...
+Updating 080beaf..39ce469
+Fast-forward
+ bin/Ship.class | Bin 836 -> 884 bytes
+ src/Ship.java  |  16 +++++-----------
+ 2 files changed, 5 insertions(+), 11 deletions(-)
+COMPLETE
+
+DELETING BRANCH 'feature-shiplogic'...
+Deleted branch feature-shiplogic (was 39ce469).
+COMPLETE
+
+CHECKOUT: feature-coordinate
+Switched to a new branch 'feature-coordinate'
+
+CD: PATH WITH UPDATES
+CHECKOUT: c26d186
+
+Previous HEAD position was 5281141... shiplogic fix updateCallsHit test
+HEAD is now at c26d186... feature-coordinate fix canBeHit test (and missesWhenNoShip in the process)
+
+ATTEMPTING RM...
+COMPLETE
+
+ATTEMPTING COPY...
+COMPLETE
+
+CD: PATH BEING UPDATED
+
+ADDING FILES...
+COMPLETE
+
+COMMITTING... feature-coordinate fix canBeHit test (and missesWhenNoShip in the process)
+[feature-coordinate 03f4c38] feature-coordinate fix canBeHit test (and missesWhenNoShip in the process)
+ 4 files changed, 9 insertions(+), 24 deletions(-)
+ rewrite bin/CoordinateSubject.class (65%)
+COMPLETE
+
+CONTINUING BRANCH: feature-coordinate
+
+CD: PATH WITH UPDATES
+CHECKOUT: 064a299
+
+Previous HEAD position was c26d186... feature-coordinate fix canBeHit test (and missesWhenNoShip in the process)
+HEAD is now at 064a299... coordinate fix callingCoordinateSetsCalled test
+
+ATTEMPTING RM...
+COMPLETE
+
+ATTEMPTING COPY...
+COMPLETE
+
+CD: PATH BEING UPDATED
+
+ADDING FILES...
+COMPLETE
+
+COMMITTING... coordinate fix callingCoordinateSetsCalled test
+[feature-coordinate 5f8f1e8] coordinate fix callingCoordinateSetsCalled test
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+COMPLETE
+
+CHECKOUT: master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 6 commits.
+  (use "git push" to publish your local commits)
+
+MERGING BRANCH 'feature-coordinate'...
+Updating 39ce469..5f8f1e8
+Fast-forward
+ bin/Coordinate.class        | Bin 864 -> 935 bytes
+ bin/CoordinateSubject.class | Bin 621 -> 661 bytes
+ src/Coordinate.java         |  31 +++++++++++--------------------
+ src/CoordinateSubject.java  |   6 +-----
+ 4 files changed, 12 insertions(+), 25 deletions(-)
+COMPLETE
+
+DELETING BRANCH 'feature-coordinate'...
+Deleted branch feature-coordinate (was 5f8f1e8).
+COMPLETE
+
+CHECKOUT: feature-board
+Switched to a new branch 'feature-board'
+
+CD: PATH WITH UPDATES
+CHECKOUT: 3f2a897
+
+Previous HEAD position was 064a299... coordinate fix callingCoordinateSetsCalled test
+HEAD is now at 3f2a897... feature-board 'fix' canAddShips test.
+
+ATTEMPTING RM...
+COMPLETE
+
+ATTEMPTING COPY...
+COMPLETE
+
+CD: PATH BEING UPDATED
+
+ADDING FILES...
+COMPLETE
+
+COMMITTING... feature-board 'fix' canAddShips test.
+[feature-board 6169196] feature-board 'fix' canAddShips test.
+ 4 files changed, 8 insertions(+), 8 deletions(-)
+COMPLETE
+
+CONTINUING BRANCH: feature-board
+
+CD: PATH WITH UPDATES
+CHECKOUT: 81c8355
+
+Previous HEAD position was 3f2a897... feature-board 'fix' canAddShips test.
+HEAD is now at 81c8355... board fix canSinkShips test (fixing canAddShips, part of CoordinateSubject, cleaned up ship constructor.) all tests pass.
+
+ATTEMPTING RM...
+COMPLETE
+
+ATTEMPTING COPY...
+COMPLETE
+
+CD: PATH BEING UPDATED
+
+ADDING FILES...
+COMPLETE
+
+COMMITTING... board fix canSinkShips test (fixing canAddShips, part of CoordinateSubject, cleaned up ship constructor.) all tests pass.
+[feature-board 9b2c72d] board fix canSinkShips test (fixing canAddShips, part of CoordinateSubject, cleaned up ship constructor.) all tests pass.
+ 6 files changed, 7 insertions(+), 4 deletions(-)
+COMPLETE
+
+CHECKOUT: master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 8 commits.
+  (use "git push" to publish your local commits)
+
+MERGING BRANCH 'feature-board'...
+Updating 5f8f1e8..9b2c72d
+Fast-forward
+ bin/Board.class       | Bin 1078 -> 1451 bytes
+ bin/Coordinate.class  | Bin 935 -> 1053 bytes
+ bin/Ship.class        | Bin 884 -> 877 bytes
+ bin/ShipFactory.class | Bin 1388 -> 1388 bytes
+ src/Board.java        |  16 ++++++++++++----
+ src/Coordinate.java   |   2 +-
+ src/Ship.java         |   3 +--
+ src/ShipFactory.java  |   4 ----
+ 8 files changed, 14 insertions(+), 11 deletions(-)
+COMPLETE
+
+DELETING BRANCH 'feature-board'...
+Deleted branch feature-board (was 9b2c72d).
+COMPLETE
+
+CHECKOUT: feature-formatting
+Switched to a new branch 'feature-formatting'
+
+CD: PATH WITH UPDATES
+CHECKOUT: 14473fb
+
+Previous HEAD position was 81c8355... board fix canSinkShips test (fixing canAddShips, part of CoordinateSubject, cleaned up ship constructor.) all tests pass.
+HEAD is now at 14473fb... feature-formatting changed whitespace/formatting to be consistent across the project. minor code change, all tests pass.
+
+ATTEMPTING RM...
+COMPLETE
+
+ATTEMPTING COPY...
+COMPLETE
+
+CD: PATH BEING UPDATED
+
+ADDING FILES...
+COMPLETE
+
+COMMITTING... feature-formatting changed whitespace/formatting to be consistent across the project. minor code change, all tests pass.
+[feature-formatting 440217e] feature-formatting changed whitespace/formatting to be consistent across the project. minor code change, all tests pass.
+ 13 files changed, 12 insertions(+), 5 deletions(-)
+COMPLETE
+
+CHECKOUT: master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 10 commits.
+  (use "git push" to publish your local commits)
+
+MERGING BRANCH 'feature-formatting'...
+Updating 9b2c72d..440217e
+Fast-forward
+ bin/Board.class             | Bin 1451 -> 1451 bytes
+ bin/Coordinate.class        | Bin 1053 -> 1053 bytes
+ bin/CoordinateSubject.class | Bin 661 -> 661 bytes
+ bin/Ship.class              | Bin 877 -> 877 bytes
+ bin/ShipFactory.class       | Bin 1388 -> 1388 bytes
+ bin/ShipType.class          | Bin 1048 -> 1048 bytes
+ src/Board.java              |   2 ++
+ src/Coordinate.java         |   5 +++--
+ src/CoordinateSubject.java  |   5 ++---
+ src/Observable.java         |   1 +
+ src/Ship.java               |   2 ++
+ src/ShipFactory.java        |   1 +
+ src/ShipType.java           |   1 +
+ 13 files changed, 12 insertions(+), 5 deletions(-)
+COMPLETE
+
+DELETING BRANCH 'feature-formatting'...
+Deleted branch feature-formatting (was 440217e).
+COMPLETE
+
+CD: ORIGINAL PATH
+
+GITCOMMITTER COMPLETE
+
+PS C:\Users\dpope\OneDrive - IDEXX\dpope\desktop\newagile> git status
+On branch master
+Your branch is ahead of 'origin/master' by 11 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+PS C:\Users\dpope\OneDrive - IDEXX\dpope\desktop\newagile> git log
+commit 440217ef0ff9b4b41cb84f710d137bbd6024d9d6
+Author: Drewry Pope <drew-pope@idexx.com>
+Date:   Wed Mar 7 13:21:37 2018 -0600
+
+    feature-formatting changed whitespace/formatting to be consistent across the project. minor code change, all tests pass.
+
+commit 9b2c72dad376c78410d9c6d0a4a218bd760e8ffa
+Author: Drewry Pope <drew-pope@idexx.com>
+Date:   Wed Mar 7 13:21:36 2018 -0600
+
+    board fix canSinkShips test (fixing canAddShips, part of CoordinateSubject, cleaned up ship constructor.) all tests pass.
+
+commit 616919640203f1dd2d0e16fd253815a73c70dff6
+Author: Drewry Pope <drew-pope@idexx.com>
+Date:   Wed Mar 7 13:21:35 2018 -0600
+
+    feature-board 'fix' canAddShips test.
+
+commit 5f8f1e8f4f9bbd6acc513b94bfd55d8f5a92596e
+Author: Drewry Pope <drew-pope@idexx.com>
+Date:   Wed Mar 7 13:21:34 2018 -0600
+
+    coordinate fix callingCoordinateSetsCalled test
+
+commit 03f4c38e803f523cd6f6eaeb30a2bd8c20a8e659
+Author: Drewry Pope <drew-pope@idexx.com>
+Date:   Wed Mar 7 13:21:34 2018 -0600
+
+    feature-coordinate fix canBeHit test (and missesWhenNoShip in the process)
+
+commit 39ce4698f95ea9ce6120836b99482f4376b20b85
+Author: Drewry Pope <drew-pope@idexx.com>
+Date:   Wed Mar 7 13:21:33 2018 -0600
+
+    shiplogic fix updateCallsHit test
+
+commit f23ecf8a2ecb1260d044793a1937c9680a1bf255
+Author: Drewry Pope <drew-pope@idexx.com>
+Date:   Wed Mar 7 13:21:32 2018 -0600
+
+    feature-shiplogic fix canBeSunk test
+
+commit 080beafe9f4bd6878a476de15b97619526e4f374
+Author: Drewry Pope <drew-pope@idexx.com>
+Date:   Wed Mar 7 13:21:31 2018 -0600
+
+    feature-carrierships fix failing canCreate test
+
+commit 8ac1bba3d5fa4c9adbc28433aafc4d969c9b27ed
+Author: Drewry Pope <drew-pope@idexx.com>
+Date:   Wed Mar 7 13:21:30 2018 -0600
+
+    feature-destroyerships fix failing canCreate test
+
+commit bcb00242738fc68a27a5c72d099e5d2f10bc4a07
+Author: Drewry Pope <drew-pope@idexx.com>
+Date:   Wed Mar 7 13:21:29 2018 -0600
+
+    feature-subships fix failing canCreate test
+
+commit 700e98f4b5f2eaa189fd5961748cc00ab148f1be
+Author: Drewry Pope <drew-pope@idexx.com>
+Date:   Wed Mar 7 13:21:28 2018 -0600
+
+    feature-patrolships fix failing canCreate test
+
+commit ad689c791a21fe610e639f607232fcd27fc2725f
+Author: Benjamin J. Anderson <andeb2804@gmail.com>
+Date:   Wed Feb 28 13:05:00 2018 -0600
+
+    Initial commits
+
+PS C:\Users\dpope\OneDrive - IDEXX\dpope\desktop\newagile> git status
+On branch master
+Your branch is ahead of 'origin/master' by 11 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean

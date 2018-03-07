@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Board {
 
@@ -24,6 +25,8 @@ public class Board {
 	}
 
 	public void addShip(int x, int y, ShipType type) throws Exception {
+		shipCount += 1;
+		
 		
 	}
 

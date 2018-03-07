@@ -21,15 +21,16 @@ public class ShipFactory {
 			ship = new Ship(3);
 			break;
 			
-		//Creates a a Carrier Ship
+		//Creates a Carrier Ship
 		case CARRIER:
 			ship = new Ship(5);
 			break;
 			
-		
-		
-		
-		
+		//Creates a Destroyer Ship
+		case DESTROYER:
+			ship = new Ship(3);
+			break;
+			
 		default:
 			throw new Exception("Undefined ShipType: " + type);
 		}

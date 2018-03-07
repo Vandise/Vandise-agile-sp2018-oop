@@ -2,6 +2,7 @@
  * Observer pattern
  */
 public abstract class CoordinateSubject {
+	
 	protected Ship observer;
 
 	// TODO

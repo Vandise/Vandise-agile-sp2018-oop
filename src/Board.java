@@ -24,7 +24,13 @@ public class Board {
 	}
 
 	public void addShip(int x, int y, ShipType type) throws Exception {
+		shipCount++;
 		// TODO: implement add ship functionality. See vectors
+		Ship ship = ShipFactory.create(type);
+		for ( int i = 0; i < ship.getLife(); i++){
+			int coord = ((y-i) * this.getSize() + x);
+			this.coordinateVector[coord].attach(ship);
+		}
 	}
 
 	public int getShipCount() {

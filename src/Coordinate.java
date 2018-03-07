@@ -18,6 +18,7 @@ public class Coordinate extends CoordinateSubject {
 			
 			if (this.hasShip) {
 				super.getObservable().hit();
+				return "Hit";
 			}
 			
 			this.notifyObserver();
@@ -33,7 +34,7 @@ public class Coordinate extends CoordinateSubject {
 	//
 	@Override
 	public void attach(Ship observer) {
-		hasShip = true;
+		this.hasShip = true;
 		super.attach(observer);
 	}
 

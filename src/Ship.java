@@ -10,9 +10,10 @@ public class Ship implements Observable {
 	// TODO
 	// See unit tests for what needs to be done here
 	// in the observer pattern
-	//
-	public void update() throws Exception {	
-		this.life = 2; // Got it to pass
+	
+	public void update() throws Exception {
+		this.hit();
+		//The unit tests mentions "callHitonUpdate" seems to be causing errors
 	}
 
 	public boolean isSunk() {

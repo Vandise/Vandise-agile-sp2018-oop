@@ -13,6 +13,7 @@ public class Ship implements Observable {
 	//
 	public void update() throws Exception {
 
+		this.hit();
 	}
 
 	public boolean isSunk() {
@@ -31,6 +32,10 @@ public class Ship implements Observable {
 			this.life -= 1;
 		} else {
 			throw new Exception("Hit on ship that's already sunk.");
+		}
+		
+		if (getLife() <= 0){
+			this.sunk = true;
 		}
 	}
 }

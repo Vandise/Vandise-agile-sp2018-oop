@@ -1,4 +1,4 @@
-
+// this is for a test for git
 public class Board {
 
 	private int size;
@@ -25,6 +25,14 @@ public class Board {
 
 	public void addShip(int x, int y, ShipType type) throws Exception {
 		// TODO: implement add ship functionality. See vectors
+		Ship newShip = ShipFactory.create(type);
+		
+		for (int i = 0; i < newShip.getLife(); i++){
+			coordinateVector[x + (y * this.getSize())].attach(newShip);
+		}
+		
+		this.shipCount += 1;
+		
 	}
 
 	public int getShipCount() {

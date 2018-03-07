@@ -23,14 +23,14 @@ public class ShipFactoryTest {
 	}
 
 	@Test
-	public void testCanCreateCarrierShips() throws Exception {
-		Ship ship = ShipFactory.create(ShipType.CARRIER);
-		assertThat(ship.getLife(), is(5));
-	}
-
-	@Test
 	public void testCanCreateBattleShips() throws Exception {
 		Ship ship = ShipFactory.create(ShipType.BATTLESHIP);
 		assertThat(ship.getLife(), is(4));
+	}
+	
+	@Test
+	public void testCanCreateCarrierShips() throws Exception {
+		Ship ship = ShipFactory.create(ShipType.CARRIER);
+		assertThat(ship.getLife(), is(5));
 	}
 }

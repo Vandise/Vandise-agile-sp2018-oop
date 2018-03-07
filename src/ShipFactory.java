@@ -5,14 +5,23 @@ public class ShipFactory {
 	// read about the factory pattern
 	//
 	public static Ship create(ShipType type) throws Exception {
+		
 		Ship ship = null;
+		
 		switch(type) {
+		
+		case CARRIER:
+			ship = new Ship(5);
+			break;
+			
 		case BATTLESHIP:
 			ship = new Ship(4);
 			break;
+			
 		default:
 			throw new Exception("Undefined ShipType: " + type);
 		}
+		
 		return ship;
 	}
 }

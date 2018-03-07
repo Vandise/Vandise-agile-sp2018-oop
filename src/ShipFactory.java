@@ -10,6 +10,9 @@ public class ShipFactory {
 		case PATROL:
 			ship = new Ship(2);
 			break;
+		case SUBMARINE:
+			ship = new Ship(3);
+			break;
 		case BATTLESHIP:
 			ship = new Ship(4);
 			break;

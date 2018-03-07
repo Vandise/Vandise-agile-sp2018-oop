@@ -9,7 +9,7 @@ public abstract class CoordinateSubject {
 	// read about the observer pattern
 	//
 	public void notifyObserver() throws Exception {
-
+		observer.hit();
 	}
 
 	public Ship getObservable() {

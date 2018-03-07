@@ -11,15 +11,25 @@ public class Coordinate extends CoordinateSubject {
 	// TODO
 	// call the coordinate, check if the ship was hit, missed, or sunk
 	// read about the observer pattern
-	//
+	// 
 	public String call() throws Exception {
 		if (!this.called) {
-			this.notifyObserver();
+		  if (this.hasShip()) {
+		    this.called = true;
+		    this.notifyObserver();
+		    return "Hit";
+		    
+		  } else {	
+			this.called = true;
 			return "Miss";
+		  }
+		
+		  
 		} else {
 			throw new Exception("Coordinate already called");
 		}
 	}
+
 
 	// TODO
 	//	read about inheritance and calling parent
@@ -27,20 +37,29 @@ public class Coordinate extends CoordinateSubject {
 	//
 	@Override
 	public void attach(Ship observer) {
-		// TODO
+		super.attach(observer);
+		this.hasShip = true;
 	}
 
 	// TODO
 	// return if the coordinate has been called or not
 	//
 	public boolean called() {
+	  if (this.called) {
+	    return true;
+	  } else {
 		return false;
+	  }
 	}
 
-	// TODO
+	// TODO 
 	// is there a ship on this coordinate?
 	//
 	public boolean hasShip() {
+	  if (this.hasShip) {
+	    return true;
+	  } else {
 		return false;
+	}
 	}
 }

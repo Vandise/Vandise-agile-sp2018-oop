@@ -27,10 +27,13 @@ public class Ship implements Observable {
 	//	a piece of logic is missing here
 	//
 	public void hit() throws Exception {
-	  if (life > 1) { 
-			this.life -= 1;
-	  } else if (life < 1) {
-	    isSunk();
+	  if (!this.sunk) { 
+	
+			if (this.getLife() > 1) {
+			  this.life -= 1;
+			} else {
+			  this.sunk = true;
+			}
 		} else {
 			throw new Exception("Hit on ship that's already sunk.");
 		}

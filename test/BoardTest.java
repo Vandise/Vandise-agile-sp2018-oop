@@ -25,7 +25,7 @@ public class BoardTest {
 	@Test(expected = Exception.class)
 	public void testBoardCannotCallTheSameCoordinateTwice() throws Exception {
 		assertThat(this.board.callCoordinate(5, 5), is("Miss"));
-		this.board.callCoordinate(5, 5);
+		assertThat(this.board.callCoordinate(5, 5), is("Coordinate already called"));
 	}
 
 	@Test

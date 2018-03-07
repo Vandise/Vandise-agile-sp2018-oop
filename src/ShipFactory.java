@@ -1,9 +1,5 @@
 
 public class ShipFactory {
-	// TODO:
-	// Create a ship based on the ShipType
-	// read about the factory pattern
-	//
 	public static Ship create(ShipType type) throws Exception {
 		Ship ship = null;
 		switch(type) {

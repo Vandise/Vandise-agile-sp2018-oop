@@ -18,16 +18,20 @@ public class Board {
 		return this.size;
 	}
 
-	public String callCoordinate(int x, int y) throws Exception {
-		int coordinates = y * this.size + x;
-		return (this.coordinateVector[coordinates]).call();
+	public String callCoordinate(int x, int y) throws Exception { 
+		return getCoordinate(x, y).call();
 	}
 
 	public void addShip(int x, int y, ShipType type) throws Exception {
-		// TODO: implement add ship functionality. See vectors
+		getCoordinate(x, y).attach(ShipFactory.create(type));
+		shipCount++;
 	}
 
 	public int getShipCount() {
 		return this.shipCount;
+	}
+	
+	private Coordinate getCoordinate(int x, int y) throws Exception {
+		return this.coordinateVector[y * this.size + x];
 	}
 }

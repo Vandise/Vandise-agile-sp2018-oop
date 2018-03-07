@@ -1,9 +1,11 @@
 
 public class Coordinate extends CoordinateSubject {
+	
 	private boolean called;
 	private boolean hasShip;
 
 	public Coordinate() {
+		
 		this.called = false;
 		this.hasShip = false;
 	}
@@ -13,34 +15,32 @@ public class Coordinate extends CoordinateSubject {
 	// read about the observer pattern
 	//
 	public String call() throws Exception {
+		
 		if (!this.called) {
+			
 			this.called = true;
 			
 			if (this.hasShip) {
+				
 				super.getObservable().hit();
 				return "Hit";
 			}
 			
 			this.notifyObserver();
 			return "Miss";
+			
 		} else {
 			throw new Exception("Coordinate already called");
 		}
 	}
 
-	// TODO
-	//	read about inheritance and calling parent
-	//	methods in Java
-	//
+
 	@Override
 	public void attach(Ship observer) {
 		this.hasShip = true;
 		super.attach(observer);
 	}
 
-	// TODO
-	// return if the coordinate has been called or not
-	//
 	public boolean called() {
 		return called;
 	}

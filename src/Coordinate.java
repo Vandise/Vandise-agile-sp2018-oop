@@ -13,8 +13,9 @@ public class Coordinate extends CoordinateSubject {
 	// read about the observer pattern
 	//
 	public String call() throws Exception {
-		if (this.called) {
+		if (!this.called) {
 			this.notifyObserver();
+			this.called = true;
 			return "Miss";
 		} else {
 			throw new Exception("Coordinate already called");

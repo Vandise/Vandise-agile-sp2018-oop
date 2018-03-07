@@ -30,9 +30,6 @@ public class Coordinate extends CoordinateSubject {
 		// TODO
 	}
 
-	// TODO
-	// return if the coordinate has been called or not
-	//
 	public boolean called() {
 		if (!this.called) {
 			return true;

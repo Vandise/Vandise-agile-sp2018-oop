@@ -26,6 +26,9 @@ public class Board {
 	public void addShip(int x, int y, ShipType type) throws Exception {
 		// TODO: implement add ship functionality. See vectors
 		
+		// I have a good idea of how the vectors work, but I wasn't able to figure out
+		// how to implement the ship to the coordinate system (for loop / etc.)
+		
 		this.shipCount += 1;
 	}
 

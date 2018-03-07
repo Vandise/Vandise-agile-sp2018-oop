@@ -16,6 +16,7 @@ public class Coordinate extends CoordinateSubject {
 		if (!this.called) {
 			this.notifyObserver();
 			return "Miss";
+			// I tried to do a try catch, and an if else statement, but I could not get either of them to work.
 		} else {
 			throw new Exception("Coordinate already called");
 		}
@@ -28,6 +29,8 @@ public class Coordinate extends CoordinateSubject {
 	@Override
 	public void attach(Ship observer) {
 		// TODO
+		
+		// Wasn't able to figure out how to attach the Ship to the coordinates.
 	}
 
 	public boolean called() {
@@ -42,6 +45,7 @@ public class Coordinate extends CoordinateSubject {
 	// is there a ship on this coordinate?
 	//
 	public boolean hasShip() {
+		// Wasn't able to figure out how to attach the Ship.
 		return false;
 	}
 }

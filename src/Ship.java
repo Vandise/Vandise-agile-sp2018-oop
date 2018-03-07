@@ -32,5 +32,9 @@ public class Ship implements Observable {
 		} else {
 			throw new Exception("Hit on ship that's already sunk.");
 		}
+		
+		if (getLife() <= 0){
+			this.sunk = true;
+		}
 	}
 }

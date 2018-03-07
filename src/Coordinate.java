@@ -13,10 +13,13 @@ public class Coordinate extends CoordinateSubject {
 	// read about the observer pattern
 	//
 	public String call() throws Exception {
-		if (!this.called) {
+		if (!this.called && !this.hasShip) {
 			this.notifyObserver();
 			this.called = true;
 			return "Miss";
+		} else if (this.hasShip) {
+			this.notifyObserver();
+			return "Hit";
 		} else {
 			throw new Exception("Coordinate already called");
 		}
@@ -44,4 +47,10 @@ public class Coordinate extends CoordinateSubject {
 	public boolean hasShip() {
 		return false;
 	}
+
+	public void setShip() {
+		this.hasShip = true;
+	}
+	
+	
 }

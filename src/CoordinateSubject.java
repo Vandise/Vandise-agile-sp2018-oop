@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /*
  * Observer pattern
  */
@@ -8,9 +10,13 @@ public abstract class CoordinateSubject {
 	// update the observer
 	// read about the observer pattern
 	//
+	ArrayList<ShipElement> element = new ArrayList<ShipElement>();
 	public void notifyObserver() throws Exception {
-
+		for (ShipElement element : this.element) {
+			element.update();
+		}
 	}
+
 
 	public Ship getObservable() {
 		return this.observer;

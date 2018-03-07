@@ -17,9 +17,14 @@ public class Coordinate extends CoordinateSubject {
 	//
 	public String call() throws Exception {
 		if (!this.called) {
-			this.notifyObserver();
 			this.called = true;
-			return "Miss";
+			if (getObservable() != null) {
+				this.notifyObserver();
+				return "Hit";
+			} else {
+				return "Miss";
+			}
+			
 		} else {
 			throw new Exception("Coordinate already called");
 		}
@@ -33,6 +38,7 @@ public class Coordinate extends CoordinateSubject {
 	@Override
 	public void attach(Ship observer) {
 		super.attach(observer);
+		hasShip = true;
 	}
 	
 	

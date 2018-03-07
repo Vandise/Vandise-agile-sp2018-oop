@@ -11,13 +11,13 @@ public class ShipFactory {
 			ship = new Ship(4);
 			break;
 		case PATROL:
-			ship = new Ship(1);
+			ship = new Ship(2);
 			break;
 		case DESTROYER:
 			ship = new Ship(3);
 			break;
 		case SUBMARINE:
-			ship = new Ship(2);
+			ship = new Ship(3);
 			break;
 		case CARRIER:
 			ship = new Ship(5);

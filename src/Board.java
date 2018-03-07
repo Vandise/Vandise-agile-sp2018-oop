@@ -18,7 +18,7 @@ public class Board {
 		return this.size;
 	}
 
-	public String callCoordinate(int x, int y) throws java.lang.Exception {
+	public String callCoordinate(int x, int y) throws Exception {
 		int coordinates = y * this.size + x;
 		return (this.coordinateVector[coordinates]).call();
 	}

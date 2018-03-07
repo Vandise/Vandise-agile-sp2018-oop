@@ -16,7 +16,11 @@ public class Ship implements Observable {
 	}
 
 	public boolean isSunk() {
-		return this.sunk;
+		if (this.life == 0) {
+			return !this.sunk;
+		} else {
+			return this.sunk;
+		}
 	}
 
 	public int getLife() {

@@ -10,6 +10,27 @@ public class ShipFactory {
 		case BATTLESHIP:
 			ship = new Ship(4);
 			break;
+		
+		//Creates a Patrol Ship
+		case PATROL: 
+			ship = new Ship(2);
+			break;
+		
+		//Creates a Sub Ship
+		case SUBMARINE:
+			ship = new Ship(3);
+			break;
+			
+		//Creates a Carrier Ship
+		case CARRIER:
+			ship = new Ship(5);
+			break;
+			
+		//Creates a Destroyer Ship
+		case DESTROYER:
+			ship = new Ship(3);
+			break;
+			
 		default:
 			throw new Exception("Undefined ShipType: " + type);
 		}

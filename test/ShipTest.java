@@ -28,7 +28,7 @@ public class ShipTest {
 		assertThat(this.ship.getLife(), is(2));
 	}
 
-	@Test
+	@Test // fix this.
 	public void testShipCanBeSunk() throws Exception {
 		int life = this.ship.getLife();
 		for (int i = 0; i < life; i++) {
@@ -37,13 +37,14 @@ public class ShipTest {
 		assertThat(this.ship.isSunk(), is(true));
 	}
 
-	@Test
+	@Test 
 	public void testShipUpdateCallsHit() throws Exception {
 		 this.ship.update();
+		 
 		 assertThat(this.ship.getLife(), is(2));
 	}
 
-	@Test(expected = Exception.class)
+	@Test(expected = Exception.class) // fix this.
 	public void testCannotHitShipMoreThenMaxLife() throws Exception {
 		this.ship.hit();
 		this.ship.hit();

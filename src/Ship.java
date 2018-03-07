@@ -12,6 +12,8 @@ public class Ship implements Observable {
 	// in the observer pattern
 	//
 	public void update() throws Exception {
+		
+		hit();
 
 	}
 
@@ -29,8 +31,22 @@ public class Ship implements Observable {
 	public void hit() throws Exception {
 		if (!this.sunk) {
 			this.life -= 1;
-		} else {
-			throw new Exception("Hit on ship that's already sunk.");
+			if(this.life < 1) {
+				sunk = true;
+			}
+			
+			
 		}
+		else {
+			// if the ship is sunk it comes in here. 
+			
+			if(this.sunk) {
+			throw new Exception("Hit on ship that's already sunk.");
+			}
+		}
+		
 	}
+	
+	
+	
 }

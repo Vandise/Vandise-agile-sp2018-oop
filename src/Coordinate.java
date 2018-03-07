@@ -20,7 +20,11 @@ public class Coordinate extends CoordinateSubject {
 			this.called = true;
 			if (getObservable() != null) {
 				this.notifyObserver();
-				return "Hit";
+				if (this.getObservable().isSunk()) {
+					return "Sunk";
+				} else {
+					return "Hit";
+				}
 			} else {
 				return "Miss";
 			}

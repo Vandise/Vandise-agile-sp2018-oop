@@ -24,11 +24,11 @@ public class Ship implements Observable {
 	}
 
 	// TODO
-	//	a peice of logic is missing here
+	//	a piece of logic is missing here
 	//
 	public void hit() throws Exception {
-		if (!this.sunk) {
-			this.life -= 1;
+		if (!this.sunk && this.life > 0) {
+			this.life -= 1;			
 		} else {
 			throw new Exception("Hit on ship that's already sunk.");
 		}

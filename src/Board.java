@@ -1,3 +1,5 @@
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
 
 public class Board {
 
@@ -25,9 +27,27 @@ public class Board {
 
 	public void addShip(int x, int y, ShipType type) throws Exception {
 		// TODO: implement add ship functionality. See vectors
+		x = 7;
+		y = 7;
+		type = ShipType.BATTLESHIP;
+		return;
 	}
 
 	public int getShipCount() {
 		return this.shipCount;
+	}
+	
+	public void canHitShips() throws Exception {
+		
+	}
+	
+	public void canSinkShips() throws Exception {
+		int life = 0;
+		
+		if (life > 0) {
+			System.out.println("Hit");
+		} else {
+			System.out.println("Sunk");
+		}
 	}
 }

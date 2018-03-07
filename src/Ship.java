@@ -16,7 +16,7 @@ public class Ship implements Observable {
 	}
 
 	public boolean isSunk() {
-		return this.sunk;
+    return this.sunk;
 	}
 
 	public int getLife() {
@@ -24,11 +24,13 @@ public class Ship implements Observable {
 	}
 
 	// TODO
-	//	a peice of logic is missing here
+	//	a piece of logic is missing here
 	//
 	public void hit() throws Exception {
-		if (!this.sunk) {
+	  if (life > 1) { 
 			this.life -= 1;
+	  } else if (life < 1) {
+	    isSunk();
 		} else {
 			throw new Exception("Hit on ship that's already sunk.");
 		}

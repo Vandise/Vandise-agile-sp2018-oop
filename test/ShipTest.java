@@ -37,9 +37,10 @@ public class ShipTest {
 		assertThat(this.ship.isSunk(), is(true));
 	}
 
-	@Test // fix this.
+	@Test 
 	public void testShipUpdateCallsHit() throws Exception {
 		 this.ship.update();
+		 
 		 assertThat(this.ship.getLife(), is(2));
 	}
 

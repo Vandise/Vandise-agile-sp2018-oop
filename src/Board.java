@@ -30,4 +30,5 @@ public class Board {
 	public int getShipCount() {
 		return this.shipCount;
 	}
+	
 }

@@ -26,6 +26,8 @@ public class BoardTest {
 	public void testBoardCannotCallTheSameCoordinateTwice() throws Exception {
 		assertThat(this.board.callCoordinate(5, 5), is("Miss"));
 		this.board.callCoordinate(5, 5);
+		
+		//couldn't find what was supposed to be the error
 	}
 
 	@Test
@@ -38,6 +40,9 @@ public class BoardTest {
 	public void testBoardCanHitShips() throws Exception {
 		this.board.addShip(7, 7, ShipType.BATTLESHIP);
 		assertThat(this.board.callCoordinate(7, 7), is("Hit"));
+		
+		// I tried putting the coordiantes in to the array. 
+		//The error I got was saying that they could not be converted into a coordinate type.
 	}
 
 	@Test
@@ -49,5 +54,7 @@ public class BoardTest {
 			assertThat(this.board.callCoordinate(7, 7 - i), is("Hit"));
 		}
 		assertThat(this.board.callCoordinate(7, (7 - life + 1)), is("Sunk"));
+		
+		//could not test due to use of coordinates
 	}
 }

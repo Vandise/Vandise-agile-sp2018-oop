@@ -42,6 +42,10 @@ public class Coordinate extends CoordinateSubject {
 	// is there a ship on this coordinate?
 	//
 	public boolean hasShip() {
-		return false;
+	  if (!this.called) {
+      return false;
+    } else {
+      return true;
+    }
 	}
 }

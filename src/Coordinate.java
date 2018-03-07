@@ -50,7 +50,7 @@ public class Coordinate extends CoordinateSubject {
 	// return if the coordinate has been called or not
 	//
 	public boolean called() {
-		return false;
+		return called;
 	}
 	
 	
@@ -58,6 +58,6 @@ public class Coordinate extends CoordinateSubject {
 	// is there a ship on this coordinate?
 	//
 	public boolean hasShip() {
-		return false;
+		return hasShip;
 	}
 }

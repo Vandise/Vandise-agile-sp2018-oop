@@ -22,6 +22,11 @@ public class Ship implements Observable {
 	public int getLife() {
 		return this.life;
 	}
+	
+
+	public void setLife(int life) {
+		this.life = life;
+	}
 
 	public void setSunk(boolean sunk) {
 		this.sunk = true;

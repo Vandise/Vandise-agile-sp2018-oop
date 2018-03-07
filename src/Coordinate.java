@@ -18,9 +18,10 @@ public class Coordinate extends CoordinateSubject {
 			this.called = true;
 			return "Miss";
 		} else if (this.hasShip) {
-			this.notifyObserver();
+			this.observer.update();
 			return "Hit";
 		} else {
+			this.called = true;
 			throw new Exception("Coordinate already called");
 		}
 	}
@@ -38,7 +39,7 @@ public class Coordinate extends CoordinateSubject {
 	// return if the coordinate has been called or not
 	//
 	public boolean called() {
-		return false;
+		return true;
 	}
 
 	// TODO

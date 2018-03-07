@@ -8,6 +8,12 @@ public class Coordinate extends CoordinateSubject {
 		this.hasShip = false;
 	}
 
+	
+	//Confusion with the test, when it errors on testCoordinateCanBeHit and testShipCanBeObserveredOnMultipleCoordinates
+	//with the ".getlife is 4 and expecting 3". Did I mess something up while completing the other unit tests. Or was this 
+	//fixed while editing the coordinate and coordinateSubject files?
+	
+	
 	// TODO
 	// call the coordinate, check if the ship was hit, missed, or sunk
 	// read about the observer pattern
@@ -26,8 +32,9 @@ public class Coordinate extends CoordinateSubject {
 	//	methods in Java
 	//
 	@Override
-	public void attach(Ship observer) {
-		// TODO
+	public void attach (Ship observer) {
+	
+		
 	}
 
 	// TODO

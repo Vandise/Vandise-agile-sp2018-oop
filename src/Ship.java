@@ -25,7 +25,9 @@ public class Ship implements Observable {
 	public void hit() throws Exception {
 		if (!this.sunk) {
 			this.life -= 1;
-			this.sunk = true;
+			
+				this.sunk = true;
+			
 		} else {
 			throw new Exception("Hit on ship that's already sunk.");
 		}

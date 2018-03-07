@@ -4,12 +4,8 @@
 public abstract class CoordinateSubject {
 	protected Ship observer;
 
-	// TODO
-	// update the observer
-	// read about the observer pattern
-	//
 	public void notifyObserver() throws Exception {
-
+		observer.update();
 	}
 
 	public Ship getObservable() {

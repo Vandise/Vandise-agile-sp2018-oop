@@ -15,7 +15,11 @@ public class Coordinate extends CoordinateSubject {
 	public String call() throws Exception {
 		if (!this.called) {
 			this.notifyObserver();
-			return "Miss";
+			if (this.hasShip = true) {
+				return "Hit";
+			} else {
+				return "Miss";
+			}
 		} else {
 			throw new Exception("Coordinate already called");
 		}

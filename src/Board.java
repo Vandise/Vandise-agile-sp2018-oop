@@ -1,4 +1,4 @@
-
+// this is for a test for git
 public class Board {
 
 	private int size;

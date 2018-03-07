@@ -13,6 +13,7 @@ public class Ship implements Observable {
 	//
 	public void update() throws Exception {
 
+		this.hit();
 	}
 
 	public boolean isSunk() {

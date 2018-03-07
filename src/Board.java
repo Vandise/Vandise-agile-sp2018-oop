@@ -24,7 +24,7 @@ public class Board {
 	}
 
 	public void addShip(int x, int y, ShipType type) throws Exception {
-		// TODO: implement add ship functionality. See vectors
+		
 	}
 
 	public int getShipCount() {

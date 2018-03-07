@@ -12,10 +12,15 @@ public class Ship implements Observable {
 	// in the observer pattern
 	//
 	public void update() throws Exception {
-
+		this.life -= 1;
 	}
 
 	public boolean isSunk() {
+		if (this.life <= 0) {
+			this.sunk = true;
+		} else {
+			this.sunk = false;
+		}
 		return this.sunk;
 	}
 

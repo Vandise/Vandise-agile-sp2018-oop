@@ -16,6 +16,9 @@ public class ShipFactory {
 		case SUBMARINE:
 			ship = new Ship(3);
 			break;
+		case CARRIER:
+			ship = new Ship(5);
+			break;
 		default:
 			throw new Exception("Undefined ShipType: " + type);
 		}

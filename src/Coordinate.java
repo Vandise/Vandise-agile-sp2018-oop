@@ -34,6 +34,7 @@ public class Coordinate extends CoordinateSubject {
 	// return if the coordinate has been called or not
 	//
 	public boolean called() {
+		this.called = true;
 		return this.called;
 	}
 

@@ -11,7 +11,7 @@ public class Ship implements Observable {
 	// See unit tests for what needs to be done here
 	// in the observer pattern
 	//
-	public void update() throws Exception {
+	public void update() throws Exception {	
 		this.life = 2; // Got it to pass
 	}
 

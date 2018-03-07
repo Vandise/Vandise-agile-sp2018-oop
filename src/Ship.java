@@ -1,3 +1,6 @@
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
 public class Ship implements Observable {
 	private int life;
 	private boolean sunk;
@@ -26,6 +29,15 @@ public class Ship implements Observable {
 	// TODO
 	//	a peice of logic is missing here
 	//
+	public void canBeSunk() throws Exception {
+		if (this.sunk != false) {
+		 this.life -= 1;
+		} else {
+			
+			this.sunk = false;
+		}
+	}
+	
 	public void hit() throws Exception {
 		if (!this.sunk) {
 			this.life -= 1;

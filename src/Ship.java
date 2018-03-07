@@ -7,12 +7,8 @@ public class Ship implements Observable {
 		this.sunk = false;
 	}
 
-	// TODO
-	// See unit tests for what needs to be done here
-	// in the observer pattern
-	//
 	public void update() throws Exception {
-
+		this.hit();
 	}
 
 	public boolean isSunk() {

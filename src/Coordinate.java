@@ -28,13 +28,19 @@ public class Coordinate extends CoordinateSubject {
 	@Override
 	public void attach(Ship observer) {
 		// TODO
+		
 	}
 
 	// TODO
 	// return if the coordinate has been called or not
 	//
 	public boolean called() {
-		return false;
+		if (!this.called){
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
 
 	// TODO
